@@ -45,3 +45,10 @@ export async function $getBingoCards(token: string, markedCells: number[]) {
     }) ?? [];
   return bingoCards;
 }
+
+export async function $getHitCards(token: string, cellToMark: number) {
+  const cards = await $fetchCards(token);
+  const hitCards =
+    cards?.filter((card) => card.cells.includes(cellToMark)) ?? [];
+  return hitCards;
+}

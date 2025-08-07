@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 import { Card } from "@/features/bingo-card/lib";
 import {
   $getBingoCards,
+  $getHitCards,
   $getReachedCards,
 } from "@/features/bingo-card/actions";
 
@@ -24,6 +25,7 @@ export default function EventAdminPage() {
   const [cellToMark, setCellToMark] = useState<number | null>(null);
   const [bingoCards, setBingoCards] = useState<Card[]>([]);
   const [newBingoCards, setNewBingoCards] = useState<Card[]>([]);
+  const [hitCards, setHitCards] = useState<Card[]>([]);
   const unmarkedCells = useMemo(() => {
     return languages
       .map((_, index) => index)
@@ -40,8 +42,16 @@ export default function EventAdminPage() {
     setBingoCards((prev) => [...prev, ...newBingoCards]);
   }
 
+  async function updateHitCards(cellToMark: number) {
+    if (!token) return;
+    console.log("updateHitCards", cellToMark);
+    const cards = await $getHitCards(token, cellToMark);
+    setHitCards(cards);
+  }
+
   function markRandomCell() {
     if (unmarkedCells.length === 0) return;
+    setHitCards([]);
 
     let cancelled = false;
     const duration = 2000; // 2秒
@@ -67,6 +77,7 @@ export default function EventAdminPage() {
           return prev;
         });
         updateBingoCards();
+        updateHitCards(targetCell);
         return;
       }
 
@@ -113,6 +124,16 @@ export default function EventAdminPage() {
               </div>
               <div className="text-[5rem] text-gray-500">
                 {languages[cellToMark].description}
+              </div>
+              <div className="flex flex-wrap gap-2 justify-center">
+                {hitCards.map((card) => (
+                  <div
+                    key={card.number}
+                    className="text-2xl font-bold bg-green-500 text-white p-4 rounded-lg"
+                  >
+                    No. {card.number}
+                  </div>
+                ))}
               </div>
             </div>
           ) : (
