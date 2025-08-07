@@ -1,0 +1,256 @@
+{
+    "languages": [
+        {
+            "name": "Ada",
+            "description": "安全性重視の組込み向け言語"
+        },
+        {
+            "name": "ALGOL",
+            "description": "初期の構造化プログラミング言語"
+        },
+        {
+            "name": "APL",
+            "description": "数式表現が特徴の数学向け言語"
+        },
+        {
+            "name": "Assembly",
+            "description": "機械語に近い低レベル言語"
+        },
+        {
+            "name": "Awk",
+            "description": "テキスト処理に特化した言語"
+        },
+        {
+            "name": "Bash",
+            "description": "Linuxなどで使うシェルスクリプト"
+        },
+        {
+            "name": "Basic",
+            "description": "初心者向けに作られた言語"
+        },
+        {
+            "name": "C",
+            "description": "OSや組込みで使われる中核言語"
+        },
+        {
+            "name": "C#",
+            "description": ".NET向けのオブジェクト指向言語"
+        },
+        {
+            "name": "C++",
+            "description": "Cにクラス機能を追加した言語"
+        },
+        {
+            "name": "Clojure",
+            "description": "JVM上で動作するLisp系言語"
+        },
+        {
+            "name": "COBOL",
+            "description": "企業の基幹業務で活躍する古参言語"
+        },
+        {
+            "name": "Crystal",
+            "description": "Ruby風の構文を持つ静的型言語"
+        },
+        {
+            "name": "D",
+            "description": "C++の後継を目指したモダン言語"
+        },
+        {
+            "name": "Dart",
+            "description": "Flutterで使われるUI開発言語"
+        },
+        {
+            "name": "Delphi",
+            "description": "Pascal系のGUIアプリ向け言語"
+        },
+        {
+            "name": "Elixir",
+            "description": "高並列処理が得意な関数型言語"
+        },
+        {
+            "name": "Elm",
+            "description": "フロントエンド向け関数型言語"
+        },
+        {
+            "name": "Erlang",
+            "description": "信頼性重視の並列分散向け言語"
+        },
+        {
+            "name": "F#",
+            "description": "関数型と.NET統合された言語"
+        },
+        {
+            "name": "Forth",
+            "description": "スタック操作を基本とする言語"
+        },
+        {
+            "name": "Fortran",
+            "description": "科学計算で使われる老舗言語"
+        },
+        {
+            "name": "Go",
+            "description": "高速・並列処理が得意な言語"
+        },
+        {
+            "name": "Groovy",
+            "description": "Java互換のスクリプト言語"
+        },
+        {
+            "name": "Hack",
+            "description": "PHP拡張で型チェック可能な言語"
+        },
+        {
+            "name": "Haskell",
+            "description": "純粋関数型の代表的な言語"
+        },
+        {
+            "name": "HTML",
+            "description": "Webページのマークアップ言語"
+        },
+        {
+            "name": "Java",
+            "description": "汎用性が高く多くの現場で利用"
+        },
+        {
+            "name": "JavaScript",
+            "description": "Webのフロントエンドで必須の言語"
+        },
+        {
+            "name": "Julia",
+            "description": "高速な数値計算が得意な言語"
+        },
+        {
+            "name": "Kotlin",
+            "description": "Android開発で主流のJVM言語"
+        },
+        {
+            "name": "Lisp",
+            "description": "括弧が特徴の歴史ある関数型言語"
+        },
+        {
+            "name": "Lua",
+            "description": "軽量でゲーム開発によく使われる"
+        },
+        {
+            "name": "MATLAB",
+            "description": "数値解析や可視化に特化した言語"
+        },
+        {
+            "name": "Nim",
+            "description": "高速・安全な静的型コンパイル言語"
+        },
+        {
+            "name": "Objective-C",
+            "description": "Apple製品向けの旧主流言語"
+        },
+        {
+            "name": "OCaml",
+            "description": "型推論と関数型を備えた言語"
+        },
+        {
+            "name": "Pascal",
+            "description": "教育用に設計された構造化言語"
+        },
+        {
+            "name": "Perl",
+            "description": "強力なテキスト処理が特徴"
+        },
+        {
+            "name": "PHP",
+            "description": "Webサーバーサイドで広く使用"
+        },
+        {
+            "name": "Prolog",
+            "description": "論理推論に基づくAI向け言語"
+        },
+        {
+            "name": "Python",
+            "description": "簡潔で人気の高い汎用言語"
+        },
+        {
+            "name": "R",
+            "description": "統計解析やデータ分析に特化"
+        },
+        {
+            "name": "Racket",
+            "description": "教育用途にも使われるLisp系言語"
+        },
+        {
+            "name": "Ruby",
+            "description": "生産性重視のオブジェクト指向言語"
+        },
+        {
+            "name": "Rust",
+            "description": "安全で高速なシステムプログラミング言語"
+        },
+        {
+            "name": "Scala",
+            "description": "関数型とOOPを融合したJVM言語"
+        },
+        {
+            "name": "Scheme",
+            "description": "Lisp系の簡潔な構文を持つ言語"
+        },
+        {
+            "name": "Shell",
+            "description": "UNIX系OSでの操作スクリプト"
+        },
+        {
+            "name": "Smalltalk",
+            "description": "OOPの元祖とも言える言語"
+        },
+        {
+            "name": "Solidity",
+            "description": "イーサリアム用スマートコントラクト言語"
+        },
+        {
+            "name": "SQL",
+            "description": "データベース操作のための言語"
+        },
+        {
+            "name": "Scratch",
+            "description": "子ども向けのビジュアル言語"
+        },
+        {
+            "name": "Swift",
+            "description": "Apple製品向けのモダン言語"
+        },
+        {
+            "name": "Tcl",
+            "description": "簡潔な構文のスクリプト言語"
+        },
+        {
+            "name": "TypeScript",
+            "description": "型付きのJavaScript拡張言語"
+        },
+        {
+            "name": "VBA",
+            "description": "Office自動化に使われるマクロ言語"
+        },
+        {
+            "name": "VB.NET",
+            "description": "Visual Basicの.NET版言語"
+        },
+        {
+            "name": "Verilog",
+            "description": "ハードウェア記述用の設計言語"
+        },
+        {
+            "name": "VHDL",
+            "description": "デジタル回路の設計に用いられる言語"
+        },
+        {
+            "name": "Visual Basic",
+            "description": "Windowsアプリ向けの簡単な言語"
+        },
+        {
+            "name": "Wolfram",
+            "description": "計算や数式処理に特化した言語"
+        },
+        {
+            "name": "Zig",
+            "description": "Cの代替を目指す低水準言語"
+        }
+    ]
+}
